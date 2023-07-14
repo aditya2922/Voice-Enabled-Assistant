@@ -9,8 +9,14 @@ import speech_recognition as sr
 from EdgeGPT import Chatbot, ConversationStyle
 
 async def main():
+
+    model = whisper.load_model("base")
+    result = model.transcribe("test.mp3")
+    user_input = result["text"]
+    print(f"You said: {user_input}")
+
     bot = Chatbot(cookiePath='cookies.json')
-    response = await bot.ask(prompt=input(""), conversation_style=ConversationStyle.precise)
+    response = await bot.ask(prompt=user_input, conversation_style=ConversationStyle.precise)
 
     for message in response["item"]["messages"]:
         if message["author"] == "bot":
