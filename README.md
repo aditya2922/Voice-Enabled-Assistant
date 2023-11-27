@@ -2,8 +2,6 @@
 
 Welcome to the Voice-Enabled Assistant project – an intelligent, voice-activated virtual assistant designed to enhance user interactions through advanced speech recognition and natural language understanding. This project integrates OpenAI's Whisper for accurate voice processing, GPT-3.5-turbo for conversational intelligence, Microsoft Bing AI for additional context, and Amazon Polly for lifelike voice synthesis.
 
-![Voice-Enabled Assistant](path/to/assistant-image.png)
-
 ## Key Features
 
 - **Wake-Up Command Recognition:** Initiate conversations effortlessly with a personalized wake-up command, creating a seamless and engaging user experience.
